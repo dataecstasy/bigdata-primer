@@ -1,0 +1,6 @@
+sqoop export \
+  --connect jdbc:mysql://mysql.example.com/sqoop \
+  --username sqoop \
+  --password sqoop \
+  --table cities \
+  --columns country,city

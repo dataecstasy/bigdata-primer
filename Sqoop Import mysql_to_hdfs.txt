@@ -1,0 +1,19 @@
+1) Install mysql
+2) Create Database, Table and insert records in mysql 
+3) download mysql connector for Sqoop
+4) Move the mysql connector to haoop cluster and place it in the lib directory of sqoop.
+5) execute the ipconfig/ifconfig and check the IPv4 address of mysql node and grant all the privileges to root@your_ipv4_address
+grant all privileges on *.* to root@192.168.243.1 IDENTIFIED BY ‘root’ WITH GRANT OPTION;
+6) execute Sqoop import command - 
+bin/sqoop import --connect jdbc:mysql://192.168.243.1/<Database_name> --table Employee --username root -P --target-dir /sqoopOut1 -m 1
+
+**give the password for root(if prompts)
+
+7) Open the Browser and go to the below URL:
+http://localhost:50070/dfshealth.jsp  
+
+8) Click on Browse the filesystem
+
+9) Click on sqoopOut1 directory and then click on part-m-00000 file. there is the data.
+
+

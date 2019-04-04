@@ -1,0 +1,45 @@
+--run a DFS filesystem checking utility
+hadoop fsck - /
+--run a cluster balancing utility
+hadoop balancer
+--Print the hadoop version
+hadoop version
+
+--Listing of hdfs
+hadoop fs -ls hdfs:/
+--reports the amount of space used and available on currently mounted filesystems
+hadoop fs -df hdfs:/
+
+--Count the number of directories, files and bytes under the paths that match the specified file pattern
+hadoop fs -count hdfs:/
+
+--viewing file in HDFS
+hadoop fs -cat <src>
+
+--deleting a file from hdfs
+hadoop fs -rm <path>
+
+Ex: hadoop fs -rm hdfs:/student
+
+--putting the file from Local to HDFS
+hadoop fs -put <localsrc> ... <dst>
+
+--copying the file from Local to HDFS
+hadoop fs -copyFromLocal <localsrc> ... <dst>
+
+--moving a file from location to other
+hadoop fs -mv <src> <dst>
+
+--copying a file from source to destination
+hadoop fs -cp <src> <dst>
+
+hadoop fs -cp hdfs:/file hdfs:/dest_dir
+
+--copying the file from HDFS to Local
+hadoop fs -copyToLocal [-ignoreCrc] [-crc] <src>
+
+
+
+
+
+
