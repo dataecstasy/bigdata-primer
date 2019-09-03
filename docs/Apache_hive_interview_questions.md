@@ -8,7 +8,10 @@
 
 ```
 set hive.vectorization.execution.enabled=true;
-set hive.vectorization.execution.reduced.enabled=true;```
+set hive.vectorization.execution.reduced.enabled=true;
+```
 
 ### 2. How to list the partitions in a hive table.
-```hive> show partitions table_name;```
+```
+hive> show partitions table_name;
+```
