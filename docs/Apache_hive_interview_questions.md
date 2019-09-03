@@ -5,6 +5,7 @@
 ```set hive.execution.engine=tez;```
 
 **Use Vectorization**
+
 `set hive.vectorization.execution.enabled=true;
    set hive.vectorization.execution.reduced.enabled=true;`
 
