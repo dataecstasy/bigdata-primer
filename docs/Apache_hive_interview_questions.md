@@ -6,5 +6,5 @@
 
 **Use Vectorization**
 
-### 1. How to improve hive performance with Hadoop.
+### 1. How to list the partitions in a hive table.
 ```hive> show partitions table_name;```
